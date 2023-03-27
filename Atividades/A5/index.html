@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <title> Seletores CSS </title>
+</head>
+<body>
+    
+    <input type="checkbox" id="dark-mode-input" />
+    <label class="dark-mode-toggler" for="dark-mode-input">
+      <div></div>
+    </label>
+    <div class="page">
+      <section class="container">
+        <header class="title">
+          <h1 class="main-page-title">Seletores CSS</h1>
+        </header>
+        <div class="actual-content">
+        </div>
+      </section>
+         <p> A seguir estão as resoluções dos 26 exercicios 
+        sobre seletores CSS da página <a href="https://laboratoria.github.io/css-diner/">Laboratoria</a>.
+
+      <div>
+        <p>
+            <h3>Exercicio 1</h3>
+        A resposta desse exercicio é <u>Plate</u>. É um seletor universal e 
+        seleciona todos elementos "Plate" na página HTML.
+        </p>
+        <p>
+          <h3>Exercicio 2</h3>
+          A resposta desse exercicio é <u>Bento</u>. É um seletor universal e 
+          seleciona todos elementos "Bento" na página HTML.
+      </p>
+     
+      <p>
+        <h3>Exercicio 3</h3>
+        A resposta desse exercicio é <u>#Fancy</u>. É um seletor de Id ou Identificador. Cada
+        Identificador é único dentro de uma página HTML. Para fazer a seleção de Id usa-se o jogo da velha
+        seguido pelo nome do Id atribuito a aquele elemento.
+    </p>
+    <p>
+      <h3>Exercicio 4</h3>
+      A resposta desse exercicio é <u>Plate Aple</u>. É um seletor que seleciona elementos dentro de outro
+      elemento. Nesse caso, Plate a primeira Tag HTML está selecionado Aple, uma tag que está dentro da 
+      anterior. 
+  <p>
+    <h3>Exercicio 5</h3>
+    A resposta desse exercicio é <u>#Fancy pickle</u>. É um seletor de Id ou Identificador + elemento. Como 
+    sabemos cada ID é unico em uma página HTML, pode ser ainda combinado com a seleção de outra tag que esteja 
+    presente nesse elemento identificado com uma tag.
+</p>
+<p> 
+  <h3>Exercicio 6</h3>
+  A resposta desse exercicio é <u>.small</u>. O ponto final no inicio é uma identificação de uma classe dentro de CSS. Pode 
+  ter vários elementos pertencentes a uma classe, sem limitações. Para selecionar uma classe em CSS inicia-se com 
+  ponto final seguido do nome da classe.
+</p>
+<p>
+  <h3>Exercicio 7</h3>
+  A resposta desse exercicio é <u>orange.small</u>. Podemos combinar o seletor de classes com outro elemento, basta
+  colocar o nome do elemento na frente seguido do seletor da classe. 
+</p>
+<p>
+  <h3>Exercicio 8</h3>
+  A resposta desse exercicio é <u>bento orange.small</u>. Podemos combinar diversos seletores com o seletor de classes com outro elemento, nesse caso
+  bento e orange são outros elementos combinados com a classe "small".
+</p>
+<p>
+  <h3>Exercicio 9</h3>
+  A resposta desse exercicio é <u>plate, bento </u>. O uso da virgula em seletores indica a seleção de todos
+  os elementos de uma ou mais tags. 
+</p>
+<p>
+
+  <h3>Exercicio 10</h3>
+ A resposta desse exercicio é <u>*</u>. O uso do asterisco indica a seleção de todas as tags HTML presentes.
+</p>
+
+  <p>
+    <h3>Exercicio 11</h3>
+      A resposta desse exercicio é <u>plate *</u>. O uso do asterisco seguido do nome de 
+      uma tag indica a seleção de todas as tags e elementos HTML presentes dentro dessa tag.
+</p>
+<p>
+  <h3>Exercicio 12</h3>
+  A resposta desse exercicio é <u>plate + apple </u>. O uso do mais indica a seleção de tags que estão adjcantes 
+  ou seja, seleciona o primeiro elemente maça que está posicionado após o elemento "plate".
+</p>
+<p>
+  <h3>Exercicio 13</h3>
+  A resposta desse exercicio é <u> bento ~ pickle </u>. O uso do "~" indica a seleção de todas tags "irmãs" pickle que estão
+  após o elemento bento.
+</p>
+<p>
+  <h3>Exercicio 14</h3>
+  A resposta desse exercicio é <u> plate > apple </u>. O uso do simbolo ">" indica a seleção de tags que são filhas do elemento
+  plate.
+</p>
+
+<p>
+
+  <h3>Exercicio 15</h3>
+  A resposta desse exercicio é <u> plate > orange:first-child </u>. A seleção utilizando os dois pontos e 
+  "first-child" indica a seleção do primeiro elemento filho da tag " plate". São seletores que mexem com valor-atributo.
+</p>
+<p>
+  <h3>Exercicio 16</h3>
+  A resposta desse exercicio é <u>  plate :only-child  </u>. A seleção utilizando os dois pontos e 
+  "only-child" indica a seleção de todos elementos filho da tag " plate". 
+  São seletores que mexem com valor-atributo das tags HTML.
+</p>
+
+<p>
+  <h3>Exercicio 17</h3>
+  A resposta desse exercicio é <u> .small:last-child  </u>. Também podem ser utilizado seletores de atibutos 
+  em classe, como no caso da classe "small" em que foi selecionado o ultimo elemento filho da classe.
+<p>
+  <h3>Exercicio 18</h3>
+  A resposta desse exercicio é <u>  plate:nth-child(3)  </u>. Os seletores de atributos podem ser utilizados 
+  para tags especificas, como por exemplo uma posição dentro de uma página. 
+</p>
+<p>
+  <h3>Exercicio 19</h3>
+  A resposta desse exercicio é <u> bento:nth-last-child(4)  </u>. Os seletores de atributos podem ser utilizados 
+  para tags especificas, como por exemplo uma posição dentro de uma página.  
+</p>
+<p>
+  <h3>Exercicio 20</h3>
+A resposta desse exercicio é <u> apple:first-of-type</u>. Os seletores com dois pontos servem para selecionar
+as pseudoclasses de uma tag HTML. 
+</p>
+<p>
+  <h3>Exercicio 21</h3>
+  A resposta desse exercicio é <u> plate:nth-of-type(even)</u>. Ainda com os seletores é possivel selecionar 
+  uma sequência lógica de elementos, como por exemplo esse seletor que seleciona os pratos pares.
+</p>
+<p>
+  <h3>Exercicio 22</h3>
+  A resposta desse exercicio é <u> plate:nth-of-type(2n+3)</u>. Ainda com os seletores é possivel selecionar 
+  uma sequência lógica de elementos, como por exemplo esse seletor que seleciona os pratos pares partindo do 3°.
+  Repara-se que podem ser atribuidas expressões aos seletores.
+</p>
+<p>
+  <h3>Exercicio 23</h3>
+  A resposta desse exercicio é <u> plate apple:only-of-type</u>. Os seletores podem ser configurados para estilizar 
+  qualquer caracteristica que tenham as tags html.
+</p>
+<p>
+  <h3>Exercicio 24</h3>
+  A resposta desse exercicio é <u> .small:last-of-type</u>. Como já sabemos através dos seletores é possivel
+  selecionar qualquer elemento especifico de uma tag, nesse caso o valor de atributo é ser o ultimo elemento 
+  de dois elementos distintos. 
+</p>
+<p>
+  <h3>Exercicio 25</h3>
+  A resposta desse exercicio é <u> bento:empty</u>. Através de qualquer valor de atributo é possivel fazer a seleção
+  por meio do CSS. Nesse caso todos os as tags que tiverem o valor vazio serão seleciondas. 
+</p>
+<p>
+  <h3>Exercicio 26</h3>
+  A resposta desse exercicio é <u> apple:not(.small)</u>. 
+</p>
+      </div>
+    
+</body>
+</html>
